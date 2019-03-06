@@ -1,0 +1,566 @@
+[06/Feb/2019 01:22:33] WARNING [django.request:228] Not Found: /nosotros/
+[06/Feb/2019 01:22:33] WARNING [django.server:154] "GET /nosotros/ HTTP/1.1" 404 77
+[06/Feb/2019 01:22:34] WARNING [django.request:228] Not Found: /favicon.ico
+[06/Feb/2019 01:22:34] WARNING [django.server:154] "GET /favicon.ico HTTP/1.1" 404 77
+[06/Feb/2019 01:22:35] WARNING [django.request:228] Not Found: /nosotros/
+[06/Feb/2019 01:22:35] WARNING [django.server:154] "GET /nosotros/ HTTP/1.1" 404 77
+[06/Feb/2019 01:22:35] WARNING [django.request:228] Not Found: /nosotros/
+[06/Feb/2019 01:22:35] WARNING [django.server:154] "GET /nosotros/ HTTP/1.1" 404 77
+[06/Feb/2019 01:22:36] WARNING [django.request:228] Not Found: /nosotros/
+[06/Feb/2019 01:22:36] WARNING [django.server:154] "GET /nosotros/ HTTP/1.1" 404 77
+[06/Feb/2019 01:23:48] WARNING [django.request:228] Not Found: /nosotros/
+[06/Feb/2019 01:23:48] WARNING [django.server:154] "GET /nosotros/ HTTP/1.1" 404 77
+[06/Feb/2019 01:23:48] WARNING [django.request:228] Not Found: /favicon.ico
+[06/Feb/2019 01:23:48] WARNING [django.server:154] "GET /favicon.ico HTTP/1.1" 404 77
+[06/Feb/2019 01:23:48] ERROR [django.server:154] "GET /favicon.ico HTTP/1.1" 500 59
+[06/Feb/2019 01:23:49] WARNING [django.request:228] Not Found: /nosotros/
+[06/Feb/2019 01:23:49] WARNING [django.server:154] "GET /nosotros/ HTTP/1.1" 404 77
+[06/Feb/2019 01:23:49] WARNING [django.request:228] Not Found: /favicon.ico
+[06/Feb/2019 01:23:49] WARNING [django.server:154] "GET /favicon.ico HTTP/1.1" 404 77
+[06/Feb/2019 01:23:49] ERROR [django.server:154] "GET /favicon.ico HTTP/1.1" 500 59
+[06/Feb/2019 01:23:50] WARNING [django.request:228] Not Found: /nosotros/
+[06/Feb/2019 01:23:50] WARNING [django.server:154] "GET /nosotros/ HTTP/1.1" 404 77
+[06/Feb/2019 01:23:53] WARNING [django.request:228] Not Found: /nosotros/
+[06/Feb/2019 01:23:53] WARNING [django.server:154] "GET /nosotros/ HTTP/1.1" 404 77
+[06/Feb/2019 01:23:54] WARNING [django.request:228] Not Found: /nosotros/
+[06/Feb/2019 01:23:54] WARNING [django.server:154] "GET /nosotros/ HTTP/1.1" 404 77
+[06/Feb/2019 01:24:01] WARNING [django.request:228] Not Found: /nosotros/
+[06/Feb/2019 01:24:01] WARNING [django.server:154] "GET /nosotros/ HTTP/1.1" 404 77
+[06/Feb/2019 01:24:02] WARNING [django.request:228] Not Found: /favicon.ico
+[06/Feb/2019 01:24:02] WARNING [django.server:154] "GET /favicon.ico HTTP/1.1" 404 77
+[06/Feb/2019 01:24:02] ERROR [django.server:154] "GET /favicon.ico HTTP/1.1" 500 59
+[06/Feb/2019 01:24:13] ERROR [django.request:228] Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Django\Clinica Reingenieria\clinica\sitio\views.py", line 13, in index
+    return render(request, 'inicio.html', {})
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\templatetags\static.py", line 106, in render
+    url = self.url(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\templatetags\static.py", line 103, in url
+    return self.handle_simple(path)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\templatetags\static.py", line 118, in handle_simple
+    return staticfiles_storage.url(path)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\contrib\staticfiles\storage.py", line 152, in url
+    return self._url(self.stored_name, name, force)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\contrib\staticfiles\storage.py", line 131, in _url
+    hashed_name = hashed_name_func(*args)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\contrib\staticfiles\storage.py", line 355, in stored_name
+    self.hashed_name(name, content=None, filename=intermediate_name)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\contrib\staticfiles\storage.py", line 92, in hashed_name
+    raise ValueError("The file '%s' could not be found with %r." % (filename, self))
+ValueError: The file 'images/doctor.jpg' could not be found with <django.contrib.staticfiles.storage.CachedStaticFilesStorage object at 0x04A2B6B0>.
+[06/Feb/2019 01:24:13] ERROR [django.server:154] "GET / HTTP/1.1" 500 27
+[06/Feb/2019 01:24:13] WARNING [django.request:228] Not Found: /favicon.ico
+[06/Feb/2019 01:24:13] WARNING [django.server:154] "GET /favicon.ico HTTP/1.1" 404 77
+[06/Feb/2019 01:24:14] ERROR [django.request:228] Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Django\Clinica Reingenieria\clinica\sitio\views.py", line 13, in index
+    return render(request, 'inicio.html', {})
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\templatetags\static.py", line 106, in render
+    url = self.url(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\templatetags\static.py", line 103, in url
+    return self.handle_simple(path)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\templatetags\static.py", line 118, in handle_simple
+    return staticfiles_storage.url(path)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\contrib\staticfiles\storage.py", line 152, in url
+    return self._url(self.stored_name, name, force)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\contrib\staticfiles\storage.py", line 131, in _url
+    hashed_name = hashed_name_func(*args)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\contrib\staticfiles\storage.py", line 355, in stored_name
+    self.hashed_name(name, content=None, filename=intermediate_name)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\contrib\staticfiles\storage.py", line 92, in hashed_name
+    raise ValueError("The file '%s' could not be found with %r." % (filename, self))
+ValueError: The file 'images/doctor.jpg' could not be found with <django.contrib.staticfiles.storage.CachedStaticFilesStorage object at 0x04A2B6B0>.
+[06/Feb/2019 01:24:14] ERROR [django.server:154] "GET / HTTP/1.1" 500 27
+[06/Feb/2019 01:32:30] ERROR [django.request:228] Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Django\Clinica Reingenieria\clinica\sitio\views.py", line 13, in index
+    return render(request, 'inicio.html', {})
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\templatetags\static.py", line 106, in render
+    url = self.url(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\templatetags\static.py", line 103, in url
+    return self.handle_simple(path)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\templatetags\static.py", line 118, in handle_simple
+    return staticfiles_storage.url(path)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\contrib\staticfiles\storage.py", line 152, in url
+    return self._url(self.stored_name, name, force)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\contrib\staticfiles\storage.py", line 131, in _url
+    hashed_name = hashed_name_func(*args)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\contrib\staticfiles\storage.py", line 355, in stored_name
+    self.hashed_name(name, content=None, filename=intermediate_name)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\contrib\staticfiles\storage.py", line 92, in hashed_name
+    raise ValueError("The file '%s' could not be found with %r." % (filename, self))
+ValueError: The file 'images/doctor.jpg' could not be found with <django.contrib.staticfiles.storage.CachedStaticFilesStorage object at 0x04F55BB0>.
+[06/Feb/2019 01:32:30] ERROR [django.server:154] "GET / HTTP/1.1" 500 27
+[06/Feb/2019 01:32:30] WARNING [django.request:228] Not Found: /favicon.ico
+[06/Feb/2019 01:32:30] WARNING [django.server:154] "GET /favicon.ico HTTP/1.1" 404 77
+[06/Feb/2019 01:32:30] ERROR [django.server:154] "GET /favicon.ico HTTP/1.1" 500 59
+[06/Feb/2019 01:32:31] ERROR [django.request:228] Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Django\Clinica Reingenieria\clinica\sitio\views.py", line 13, in index
+    return render(request, 'inicio.html', {})
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\templatetags\static.py", line 106, in render
+    url = self.url(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\templatetags\static.py", line 103, in url
+    return self.handle_simple(path)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\templatetags\static.py", line 118, in handle_simple
+    return staticfiles_storage.url(path)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\contrib\staticfiles\storage.py", line 152, in url
+    return self._url(self.stored_name, name, force)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\contrib\staticfiles\storage.py", line 131, in _url
+    hashed_name = hashed_name_func(*args)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\contrib\staticfiles\storage.py", line 355, in stored_name
+    self.hashed_name(name, content=None, filename=intermediate_name)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\contrib\staticfiles\storage.py", line 92, in hashed_name
+    raise ValueError("The file '%s' could not be found with %r." % (filename, self))
+ValueError: The file 'images/doctor.jpg' could not be found with <django.contrib.staticfiles.storage.CachedStaticFilesStorage object at 0x04F55BB0>.
+[06/Feb/2019 01:32:31] ERROR [django.server:154] "GET / HTTP/1.1" 500 27
+[06/Feb/2019 01:32:31] WARNING [django.request:228] Not Found: /favicon.ico
+[06/Feb/2019 01:32:31] WARNING [django.server:154] "GET /favicon.ico HTTP/1.1" 404 77
+[06/Feb/2019 01:32:31] ERROR [django.server:154] "GET /favicon.ico HTTP/1.1" 500 59
+[06/Feb/2019 01:32:34] ERROR [django.request:228] Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Django\Clinica Reingenieria\clinica\sitio\views.py", line 13, in index
+    return render(request, 'inicio.html', {})
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\templatetags\static.py", line 106, in render
+    url = self.url(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\templatetags\static.py", line 103, in url
+    return self.handle_simple(path)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\templatetags\static.py", line 118, in handle_simple
+    return staticfiles_storage.url(path)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\contrib\staticfiles\storage.py", line 152, in url
+    return self._url(self.stored_name, name, force)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\contrib\staticfiles\storage.py", line 131, in _url
+    hashed_name = hashed_name_func(*args)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\contrib\staticfiles\storage.py", line 355, in stored_name
+    self.hashed_name(name, content=None, filename=intermediate_name)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\contrib\staticfiles\storage.py", line 92, in hashed_name
+    raise ValueError("The file '%s' could not be found with %r." % (filename, self))
+ValueError: The file 'images/doctor.jpg' could not be found with <django.contrib.staticfiles.storage.CachedStaticFilesStorage object at 0x04F55BB0>.
+[06/Feb/2019 01:32:34] ERROR [django.server:154] "GET / HTTP/1.1" 500 27
+[06/Feb/2019 01:32:34] ERROR [django.request:228] Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Django\Clinica Reingenieria\clinica\sitio\views.py", line 13, in index
+    return render(request, 'inicio.html', {})
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\templatetags\static.py", line 106, in render
+    url = self.url(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\templatetags\static.py", line 103, in url
+    return self.handle_simple(path)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\templatetags\static.py", line 118, in handle_simple
+    return staticfiles_storage.url(path)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\contrib\staticfiles\storage.py", line 152, in url
+    return self._url(self.stored_name, name, force)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\contrib\staticfiles\storage.py", line 131, in _url
+    hashed_name = hashed_name_func(*args)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\contrib\staticfiles\storage.py", line 355, in stored_name
+    self.hashed_name(name, content=None, filename=intermediate_name)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\contrib\staticfiles\storage.py", line 92, in hashed_name
+    raise ValueError("The file '%s' could not be found with %r." % (filename, self))
+ValueError: The file 'images/doctor.jpg' could not be found with <django.contrib.staticfiles.storage.CachedStaticFilesStorage object at 0x04F55BB0>.
+[06/Feb/2019 01:32:34] ERROR [django.server:154] "GET / HTTP/1.1" 500 27
+[06/Feb/2019 01:32:39] WARNING [django.request:228] Not Found: /nosotros
+[06/Feb/2019 01:32:39] WARNING [django.server:154] "GET /nosotros HTTP/1.1" 404 77
+[06/Feb/2019 01:32:42] WARNING [django.request:228] Not Found: /nosotros/
+[06/Feb/2019 01:32:42] WARNING [django.server:154] "GET /nosotros/ HTTP/1.1" 404 77
+[06/Feb/2019 01:32:42] WARNING [django.request:228] Not Found: /favicon.ico
+[06/Feb/2019 01:32:42] WARNING [django.server:154] "GET /favicon.ico HTTP/1.1" 404 77
+[06/Feb/2019 01:32:42] ERROR [django.server:154] "GET /favicon.ico HTTP/1.1" 500 59
+[06/Feb/2019 01:33:37] WARNING [django.request:228] Not Found: /nosotros/
+[06/Feb/2019 01:33:37] WARNING [django.server:154] "GET /nosotros/ HTTP/1.1" 404 77
+[06/Feb/2019 01:33:37] WARNING [django.request:228] Not Found: /favicon.ico
+[06/Feb/2019 01:33:37] WARNING [django.server:154] "GET /favicon.ico HTTP/1.1" 404 77
+[06/Feb/2019 01:33:37] ERROR [django.server:154] "GET /favicon.ico HTTP/1.1" 500 59
+[06/Feb/2019 09:46:31] ERROR [django.request:228] Internal Server Error: /dashboard/
+Traceback (most recent call last):
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "D:\Django\Clinica Reingenieria\clinica\sitio\views.py", line 38, in dashboard
+    return render(request, 'dashboard.html', {'total_citas':total_citas, 'citas_faltantes':citas_faltantes})
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\templatetags\static.py", line 106, in render
+    url = self.url(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\templatetags\static.py", line 103, in url
+    return self.handle_simple(path)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\templatetags\static.py", line 118, in handle_simple
+    return staticfiles_storage.url(path)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\contrib\staticfiles\storage.py", line 152, in url
+    return self._url(self.stored_name, name, force)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\contrib\staticfiles\storage.py", line 131, in _url
+    hashed_name = hashed_name_func(*args)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\contrib\staticfiles\storage.py", line 355, in stored_name
+    self.hashed_name(name, content=None, filename=intermediate_name)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\contrib\staticfiles\storage.py", line 92, in hashed_name
+    raise ValueError("The file '%s' could not be found with %r." % (filename, self))
+ValueError: The file 'fontawesome/css/all.min.css' could not be found with <django.contrib.staticfiles.storage.CachedStaticFilesStorage object at 0x049D5230>.
+[06/Feb/2019 09:46:31] ERROR [django.server:154] "GET /dashboard/ HTTP/1.1" 500 27
+[06/Feb/2019 09:46:34] ERROR [django.request:228] Internal Server Error: /dashboard/
+Traceback (most recent call last):
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "D:\Django\Clinica Reingenieria\clinica\sitio\views.py", line 38, in dashboard
+    return render(request, 'dashboard.html', {'total_citas':total_citas, 'citas_faltantes':citas_faltantes})
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\templatetags\static.py", line 106, in render
+    url = self.url(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\templatetags\static.py", line 103, in url
+    return self.handle_simple(path)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\templatetags\static.py", line 118, in handle_simple
+    return staticfiles_storage.url(path)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\contrib\staticfiles\storage.py", line 152, in url
+    return self._url(self.stored_name, name, force)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\contrib\staticfiles\storage.py", line 131, in _url
+    hashed_name = hashed_name_func(*args)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\contrib\staticfiles\storage.py", line 355, in stored_name
+    self.hashed_name(name, content=None, filename=intermediate_name)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\contrib\staticfiles\storage.py", line 92, in hashed_name
+    raise ValueError("The file '%s' could not be found with %r." % (filename, self))
+ValueError: The file 'fontawesome/css/all.min.css' could not be found with <django.contrib.staticfiles.storage.CachedStaticFilesStorage object at 0x049D5230>.
+[06/Feb/2019 09:46:34] ERROR [django.server:154] "GET /dashboard/ HTTP/1.1" 500 27
+[06/Feb/2019 09:46:45] INFO [django.server:154] "GET /contacto/ HTTP/1.1" 200 11549
+[06/Feb/2019 09:46:45] INFO [django.server:154] "GET /static/assets/css/main.bb75d4425ba3.css HTTP/1.1" 200 56609
+[06/Feb/2019 09:46:45] INFO [django.server:154] "GET /static/assets/css/bootstrap.bb8db996e2fe.css HTTP/1.1" 200 203014
+[06/Feb/2019 09:46:45] INFO [django.server:154] "GET /static/assets/css/bootstrap.min.ce847692d0c6.css HTTP/1.1" 200 164420
+[06/Feb/2019 09:46:45] INFO [django.server:154] "GET /static/assets/css/font-awesome.min.bf0c425cdb73.css HTTP/1.1" 200 31078
+[06/Feb/2019 09:46:55] INFO [django.server:154] "GET /quienes-somos/ HTTP/1.1" 200 12627
+[06/Feb/2019 09:46:55] INFO [django.server:154] "GET /static/images/vet2.a26fae12aa56.jpg HTTP/1.1" 200 5911
+[06/Feb/2019 09:46:55] INFO [django.server:154] "GET /static/images/vet1.ac49e0da692c.jpg HTTP/1.1" 200 5534
+[06/Feb/2019 09:46:55] INFO [django.server:154] "GET /static/images/vet5.10861314cb3b.jpg HTTP/1.1" 200 6075
+[06/Feb/2019 09:46:55] INFO [django.server:154] "GET /static/images/vet4.5f1b3ea47544.jpg HTTP/1.1" 200 5399
+[06/Feb/2019 09:46:55] INFO [django.server:154] "GET /static/images/vet3.d2bfa4bfe82e.jpg HTTP/1.1" 200 6181
+[06/Feb/2019 09:46:55] INFO [django.server:154] "GET /static/assets/fontaweasome/css/all.5a572f76da10.css HTTP/1.1" 200 8192
+[06/Feb/2019 09:46:55] INFO [django.server:154] "GET /static/assets/css/bootstrap.bb8db996e2fe.css HTTP/1.1" 200 8192
+[06/Feb/2019 09:46:55] INFO [django.server:154] "GET /static/assets/css/bootstrap.min.ce847692d0c6.css HTTP/1.1" 200 8192
+[06/Feb/2019 09:46:55] INFO [django.server:154] "GET /static/images/vet6.bf56f6715716.jpg HTTP/1.1" 200 6086
+[06/Feb/2019 09:46:55] INFO [django.server:154] "GET /static/assets/css/font-awesome.min.bf0c425cdb73.css HTTP/1.1" 200 31078
+[06/Feb/2019 09:46:55] ERROR [django.server:154] "GET /static/assets/fontaweasome/css/all.5a572f76da10.css HTTP/1.1" 500 59
+[06/Feb/2019 09:46:55] ERROR [django.server:154] "GET /static/assets/css/bootstrap.bb8db996e2fe.css HTTP/1.1" 500 59
+[06/Feb/2019 09:46:55] ERROR [django.server:154] "GET /static/assets/css/bootstrap.min.ce847692d0c6.css HTTP/1.1" 500 59
+[06/Feb/2019 09:46:56] ERROR [django.request:228] Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Django\Clinica Reingenieria\clinica\sitio\views.py", line 13, in index
+    return render(request, 'inicio.html', {})
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\templatetags\static.py", line 106, in render
+    url = self.url(context)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\templatetags\static.py", line 103, in url
+    return self.handle_simple(path)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\templatetags\static.py", line 118, in handle_simple
+    return staticfiles_storage.url(path)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\contrib\staticfiles\storage.py", line 152, in url
+    return self._url(self.stored_name, name, force)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\contrib\staticfiles\storage.py", line 131, in _url
+    hashed_name = hashed_name_func(*args)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\contrib\staticfiles\storage.py", line 355, in stored_name
+    self.hashed_name(name, content=None, filename=intermediate_name)
+  File "D:\Django\Clinica Reingenieria\entornos\clinica\lib\site-packages\django\contrib\staticfiles\storage.py", line 92, in hashed_name
+    raise ValueError("The file '%s' could not be found with %r." % (filename, self))
+ValueError: The file 'images/doctor.jpg' could not be found with <django.contrib.staticfiles.storage.CachedStaticFilesStorage object at 0x04A269F0>.
+[06/Feb/2019 09:46:56] ERROR [django.server:154] "GET / HTTP/1.1" 500 27
+[06/Feb/2019 09:47:07] INFO [django.server:154] "GET /servicios/ HTTP/1.1" 200 16057
+[06/Feb/2019 09:47:07] INFO [django.server:154] "GET /static/assets/css/main.bb75d4425ba3.css HTTP/1.1" 200 8192
+[06/Feb/2019 09:47:07] INFO [django.server:154] "GET /static/assets/css/bootstrap.bb8db996e2fe.css HTTP/1.1" 200 203014
+[06/Feb/2019 09:47:07] INFO [django.server:154] "GET /static/assets/css/bootstrap.min.ce847692d0c6.css HTTP/1.1" 200 164420
+[06/Feb/2019 09:47:07] INFO [django.server:154] "GET /static/assets/fontaweasome/css/all.5a572f76da10.css HTTP/1.1" 200 67433
+[06/Feb/2019 09:47:07] INFO [django.server:154] "GET /static/assets/css/font-awesome.min.bf0c425cdb73.css HTTP/1.1" 200 31078
+[06/Feb/2019 09:47:07] ERROR [django.server:154] "GET /static/assets/css/main.bb75d4425ba3.css HTTP/1.1" 500 59
+[06/Feb/2019 09:47:18] INFO [django.server:154] "GET /quienes-somos/ HTTP/1.1" 200 12627
+[06/Feb/2019 09:47:18] INFO [django.server:154] "GET /static/assets/css/main.bb75d4425ba3.css HTTP/1.1" 200 8192
+[06/Feb/2019 09:47:18] INFO [django.server:154] "GET /static/assets/fontaweasome/css/all.5a572f76da10.css HTTP/1.1" 200 67433
+[06/Feb/2019 09:47:18] INFO [django.server:154] "GET /static/assets/css/bootstrap.bb8db996e2fe.css HTTP/1.1" 200 203014
+[06/Feb/2019 09:47:18] INFO [django.server:154] "GET /static/assets/css/bootstrap.min.ce847692d0c6.css HTTP/1.1" 200 164420
+[06/Feb/2019 09:47:18] ERROR [django.server:154] "GET /static/assets/css/main.bb75d4425ba3.css HTTP/1.1" 500 59
+[06/Feb/2019 09:47:18] INFO [django.server:154] "GET /static/assets/css/font-awesome.min.bf0c425cdb73.css HTTP/1.1" 200 31078
+[06/Feb/2019 09:47:21] INFO [django.server:154] "GET /contacto/ HTTP/1.1" 200 11549
+[06/Feb/2019 09:47:22] INFO [django.server:154] "GET /static/assets/css/main.bb75d4425ba3.css HTTP/1.1" 200 8192
+[06/Feb/2019 09:47:22] ERROR [django.server:154] "GET /static/assets/css/main.bb75d4425ba3.css HTTP/1.1" 500 59
+[06/Feb/2019 09:47:22] INFO [django.server:154] "GET /static/assets/css/font-awesome.min.bf0c425cdb73.css HTTP/1.1" 200 31078
