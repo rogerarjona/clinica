@@ -19,7 +19,9 @@ class UserForm(forms.ModelForm):
 class AgregarCitaForm(forms.ModelForm):
 	class Meta:
 		model = Cita
-		exclude = ('created', 'doctor', 'paciente', 'estado')
+		exclude = ['created', 'doctor', 'paciente', 'estado']
 		widgets = {
 			'observacion': forms.Textarea(attrs={'rows':4,}),
 		}
+	def __init__(self, *args, **kwargs):
+		super(AgregarCitaForm, self).__init__(*args, **kwargs)

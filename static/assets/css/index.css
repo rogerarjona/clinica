@@ -1,0 +1,18 @@
+#header{padding: 0px !important;}
+#navbarDropdownMenuLink{padding: 0em 0.5em 1.3em 0.5em;}
+#main-logo {max-width: 25px;}
+article .row .col-md-4 .card {height: 250px;}
+article .row .col-12-narrower .car{width: 20rem;}
+.card-title{font-size: 16px;}
+
+
+@media only screen and (max-width: 768px) {
+  .btn-responsive{width: 100%; margin-bottom: 10px;}
+}
+
+@media screen and (max-width: 630px) {
+    table {
+       display: block;
+       overflow-x: auto;
+    }
+}

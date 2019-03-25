@@ -5,13 +5,11 @@
 {% endblock %}
 
 {% block content %}
-
 	<div class="page-header row no-gutters py-4">
       <div class="col-12 col-sm-4 text-center text-sm-left mb-0">
         <h3 class="page-title"><i class="fas fa-calendar"></i> Dashboard </h3>
       </div>
     </div>
-
     <div class="row">
 		<div class="col-lg col-md-6 col-sm-6 mb-4">
 	        <div class="stats-small stats-small--1 card card-small">
@@ -43,10 +41,5 @@
 {% endblock %}
 
 {% block resources %}
-<script type="text/javascript">
-	jQuery(document).ready(function(){
-		$("#menu1").addClass("active");
-		$("#menu2").removeClass("active");
-	});
-</script>
+	<script src="{% static 'assets/js/index.js' %}"></script>
 {% endblock %}

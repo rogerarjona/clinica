@@ -5,7 +5,6 @@
 {% endblock %}
 
 {% block content %}
-
 	<div class="page-header row no-gutters py-4">
       <div class="col-12 col-sm-4 text-center text-sm-left mb-0">
         <span class="text-uppercase page-subtitle">Dashboard</span>
@@ -15,7 +14,7 @@
 
     <div class="row">
 		<div class="col-md-12 text-center">
-			<a class="btn btn-success" href="{% url 'agregar_cita' %}"><i class="fas fa-calendar-plus "></i> Agendar Cita</a>
+			<a class="btn btn-success btn-responsive" href="{% url 'agregar_cita' %}"><i class="fas fa-calendar-plus "></i> Agendar Cita</a>
 			<p></p>
 		</div>
 	</div>
@@ -36,7 +35,6 @@
 								<th scope="col" class="border-0">Acción</th>
 							</tr>
 						</thead>
-
 						<tbody>
 							{% for cita in lista_citas %}
 							<tr>
@@ -47,8 +45,8 @@
 								<td>{{cita.doctor.get_full_name}}</td>
 								<td>
 									<div>
-										<a class="btn btn-info" href="{% url 'editar_cita' cita.id %}"> <i class="fas fa-calendar-alt "></i> Editar</a>
-										<a class="btn btn-danger" href="{% url 'eliminar_cita' cita.id %}"> <i class="fas fa-calendar-times "></i> Eliminar</a>
+										<a class="btn btn-info btn-responsive" href="{% url 'editar_cita' cita.id %}"> <i class="fas fa-calendar-alt "></i> Editar</a>
+										<a class="btn btn-danger btn-responsive" href="{% url 'eliminar_cita' cita.id %}"> <i class="fas fa-calendar-times "></i> Eliminar</a>
 									</div>
 								</td>
 							</tr>
@@ -59,14 +57,8 @@
 			</div>
 		</div>
 	</div>
-	
 {% endblock %}
 
 {% block resources %}
-	<script type="text/javascript">
-		jQuery(document).ready(function(){
-			$("#menu1").removeClass("active");
-			$("#menu2").addClass("active");
-		});
-	</script>
+	<script src="{% static 'assets/js/index.js' %}"></script>
 {% endblock %}

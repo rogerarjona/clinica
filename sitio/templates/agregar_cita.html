@@ -47,8 +47,8 @@
 
             	        <div class="form-group text-right">
                     		<div class="col-sm-12">
-                        	<button type="submit" class="btn btn-primary btn-md"><i class="fa fa-floppy-o"></i> Guardar </button>
-                        	<a class="btn btn-secondary" href="{% url 'lista_citas' %}">Cancelar</a>
+                        	<button type="submit" class="btn btn-primary btn-md btn-responsive"><i class="fa fa-floppy-o"></i> Guardar </button>
+                        	<a class="btn btn-secondary btn-responsive" href="{% url 'lista_citas' %}">Cancelar</a>
                     	   </div>
                         </div>
                     </form>
@@ -56,51 +56,11 @@
             </div>
         </div>
     </div>
-
 {% endblock %}
 
 {% block resources %}
-
-<link href="{% static 'assets/css/bootstrap-datetimepicker.min.css' %}" rel="stylesheet" type="text/css" media="all" />
-<script src="{% static 'assets/js/moment.min.js' %}"></script>
-<script src="{% static 'assets/js/bootstrap-datetimepicker.js' %}"></script>
-
-<script type="text/javascript">
-	jQuery(document).ready(function(){
-		var fecha_hoy = "{{fecha_hoy|safe}}"
-
-      	$('#id_dia_agendado').datetimepicker({
-        	format: "DD/MM/YYYY",
-            locale: "es",
-            icons: {
-                time: "fas fa-clock",
-                date: "fas fa-calendar",
-                up: "fas fa-arrow-up",
-                down: "fas fa-arrow-down",
-                previous: 'fas fa-chevron-left',
-                next: 'fas fa-chevron-right',
-                today: 'fas fa-calendar-check',
-                clear: 'fas fa-trash',
-                close: 'fas fa-remove'
-            }
-        });
-
-        $('#id_hora_agendado').datetimepicker({
-        	format: "HH:mm",
-            locale: "es",
-            icons: {
-                time: "fa fa-clock",
-                date: "fa fa-calendar",
-                up: "fa fa-arrow-up",
-                down: "fa fa-arrow-down",
-                previous: 'fa fa-chevron-left',
-                next: 'fa fa-chevron-right',
-                today: 'fa fa-calendar-check',
-                clear: 'fa fa-trash',
-                close: 'fa fa-remove'
-            }
-        });
-	});
-</script>
-
+    <link href="{% static 'assets/css/bootstrap-datetimepicker.min.css' %}" rel="stylesheet" type="text/css" media="all" />
+    <script src="{% static 'assets/js/moment.min.js' %}"></script>
+    <script src="{% static 'assets/js/bootstrap-datetimepicker.js' %}"></script>
+    <script src="{% static 'assets/js/index.js' %}"></script>
 {% endblock %}

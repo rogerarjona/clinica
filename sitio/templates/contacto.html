@@ -5,20 +5,17 @@
 {% endblock %}
 
 {% block content %}
-
-<h3>No dudes en comunicarte con nosotros, llama a nuestros telefonos, o comunicate por correo electronico! Nuestro personal experto respondera tus dudas.</h3>
-<div><p class="p-3"></p></div>
-<article>
+	<h3>No dudes en comunicarte con nosotros, llama a nuestros telefonos, o comunicate por correo electronico! Nuestro personal experto respondera tus dudas.</h3>
+	<div><p class="p-3"></p></div>
 	<div class="row">
 	<section class="col-4 col-12-narrower">
-
-<div class="card round" style="width: 20rem;">
-  <img class="card-img-top" src="{% static 'images/dog-phone.jpg' %}" alt="Card image cap">
-  <div class="card-body">
-    <i class="fa fa-mobile fa-2x">  Cel: 9985933199</i> 
-    <i class="fa fa-phone  fa-2x"> Tel: 132-41-52</i> 
-  </div>
-</div>
+		<div class="card round" >
+		  <img class="card-img-top" src="{% static 'images/dog-phone.jpg' %}" alt="Card image cap">
+		  <div class="card-body">
+		    <i class="fa fa-mobile fa-2x">  Cel: 9985933199</i> 
+		    <i class="fa fa-phone  fa-2x"> Tel: 132-41-52</i> 
+		  </div>
+		</div>
 	</section>
 	<section class="col-6 col-12-narrower">
 	
@@ -50,14 +47,5 @@
 {% endblock %}
 
 {% block resources %}
-
-	<script type="text/javascript">
-		jQuery(document).ready(function(){
-			$("#menu1").removeClass("current");
-			$("#menu2").removeClass("current");
-			$("#menu3").removeClass("current");
-			$("#menu4").addClass("current");
-		});
-	</script>
-
-	{% endblock %}
+	<script src="{% static 'assets/js/index.js' %}"></script>
+{% endblock %}

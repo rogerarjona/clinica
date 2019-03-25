@@ -4,12 +4,14 @@
 from django.conf.urls import include, url
 from django.contrib.auth.decorators import login_required
 from sitio import views
+from django.views.generic import TemplateView
 
 urlpatterns = [
-	#Inicio y demas}
-	url(r'^$', views.index, name="index" ),
-	url(r'^servicios/$', views.servicios, name="servicios" ),
-	url(r'^quienes-somos/$', views.nosotros, name="nosotros" ),
+	#Inicio y demas
+	url(r'^$', login_required(TemplateView.as_view(template_name="inicio.html")), name="index"),
+	url(r'^servicios/$', login_required(TemplateView.as_view(template_name="servicios.html")), name="servicios"),
+	url(r'^quienes-somos/$', login_required(TemplateView.as_view(template_name="nosotros.html")), name="nosotros"),
+
 	url(r'^contacto/$', views.contacto, name="contacto" ),
 	url(r'^mapa-de-sitio/$', views.mapa_sitio, name="mapa_sitio" ),
 	

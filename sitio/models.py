@@ -39,7 +39,7 @@ class Cita(models.Model):
         (finalizada, 'Finalizada'),
     )
 
-    dia_agendado = models.DateField(null=True)
+    dia_agendado = models.DateField(null=True, db_index=True)
     hora_agendado = models.TimeField(null=True)
     observacion = models.TextField(blank=True, null=True, default="")
 

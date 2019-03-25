@@ -9,15 +9,6 @@ import datetime
 from django.contrib import messages
 from django.http import HttpResponseRedirect,HttpResponse
 
-def index(request):
-    return render(request, 'inicio.html', {})
-
-def servicios(request):
-    return render(request, 'servicios.html', {})
-
-def nosotros(request):
-    return render(request, 'nosotros.html', {})
-
 def contacto(request):
     if request.method == "POST":
         messages.success(request, "<i class='fa fa-info-circle' ></i> Su mensaje ha sido enviado correctamente!")
@@ -61,7 +52,7 @@ def perfilusuario(request):
 
 def lista_citas(request):
     user = get_object_or_404(User, username=request.user)
-    lista_citas = Cita.objects.filter(paciente=user)
+    lista_citas = Cita.objects.select_related("paciente", "doctor").filter(paciente=user)
 
     return render(request, 'lista_citas.html', {'lista_citas':lista_citas})
 
@@ -88,18 +79,13 @@ def agregar_cita(request):
 def editar_cita(request, id_cita):
     fecha_hoy = datetime.datetime.now().strftime("%d/%m/%Y")
     titulo = "<i class='fas fa-calendar-alt'></i> Editar Cita"
-    try:
-        cita_existente = Cita.objects.get(paciente=request.user, id=id_cita)
-    except Cita.DoesNotExist:
-        cita_existente = False
-
-    if cita_existente:
-        
+    cita_existente = Cita.objects.filter(paciente=request.user, id=id_cita)
+    if cita_existente.exists():
+        cita_existente = cita_existente[0]
         if request.method == "POST":
             agregar_cita_form = AgregarCitaForm(request.POST, instance=cita_existente)
             if agregar_cita_form.is_valid():
                 agregar_cita_form.save()
-
                 messages.success(request, "<i class='fas fa-info-circle'></i> Su cita ha sido editada correctamente!")
                 return HttpResponseRedirect(reverse('lista_citas'))
         else:
