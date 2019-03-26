@@ -9,10 +9,10 @@ article .row .col-12-narrower .car{width: 20rem;}
 @media only screen and (max-width: 768px) {
   .btn-responsive{width: 100%; margin-bottom: 10px;}
 }
-
+/*
 @media screen and (max-width: 630px) {
     table {
        display: block;
        overflow-x: auto;
     }
-}
+}*/

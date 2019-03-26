@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="{% static 'assets/css/index.css' %}">
     <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'assets/fontawesome/css/all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/dataTables.bootstrap.css' %}">
     <link rel="stylesheet" id="main-stylesheet" data-version="1.1.0" href="{% static 'dashboard/styles/shards-dashboards.1.1.0.min.css' %}">
     <link rel="stylesheet" href="{% static 'dashboard/styles/extras.1.1.0.min.css' %}">
     <script async defer src="{% static 'dashboard/scripts/buttons.js' %}"></script>
@@ -115,11 +116,13 @@
         </main>
       </div>
     </div>
-  
-    <script src="{% static 'assets/js/jquery.min.js'%}"></script>
+    
+    <script src="{% static 'assets/js/jquery-3.3.1.js'%}"></script>
     <script src="{% static 'assets/js/popper.min.js'%}"></script>
     <script src="{% static 'assets/js/bootstrap.min.js'%}"></script>
-   
+    <script src="{% static 'assets/js/jquery.dataTables.min.js'%}"></script>
+    <script src="{% static 'assets/js/dataTables.bootstrap4.min.js'%}"></script>
+    <script src="{% static 'assets/js/dataTables.responsive.min.js'%}"></script>
     {% block resources %}
     {% endblock %}
   </body>
